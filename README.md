@@ -1,4 +1,4 @@
-# FileEncryptDecrypt
+# File EncryptDecrypt
 
 A C++ project that demonstrates **parallel file encryption and decryption** using two different approaches:
 
