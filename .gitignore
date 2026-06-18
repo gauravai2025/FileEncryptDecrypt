@@ -1,0 +1,15 @@
+# Object files
+*.o
+
+# Executables
+cryption
+encrypt_decrypt
+
+# VS Code settings
+.vscode/
+
+# Build directories
+build/
+
+# Logs
+*.log
