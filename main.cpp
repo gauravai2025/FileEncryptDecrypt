@@ -23,7 +23,7 @@ if(fs::exists(directory) && fs::is_directory(directory)){
     for(const auto &entry: fs::recursive_directory_iterator(directory)){
         if(entry.is_regular_file()){
            std::string filePath=entry.path().string(); 
-            IO io(filePath);
+            IO io(filePath); // return fstream
             std::fstream f_stream=std::move(io.getFileStream());
 
             if(f_stream.is_open()){
@@ -39,7 +39,7 @@ if(fs::exists(directory) && fs::is_directory(directory)){
             }
         }
 
-        ProcessManagement.executeTasks();
+        // ProcessManagement.executeTasks();
     }
     else{
     std::cout<<"directory does not exist/ invalid directory"<<std::endl;   
