@@ -1,9 +1,8 @@
 # File EncryptDecrypt
 
-A C++ project that demonstrates **parallel file encryption and decryption** using two different approaches:
+A C++ project that demonstrates **parallel file encryption and decryption** using approaches:
 
 - **Multiprocessing (Child Processes)**
-- **Multithreading with Shared Memory**
 
 The project is designed to explore how parallelism can improve the performance of cryptographic operations while handling multiple files efficiently.
 
@@ -14,18 +13,15 @@ The project is designed to explore how parallelism can improve the performance o
 - Encrypt and decrypt multiple files.
 - Parallel execution for improved performance.
 - Queue-based task management.
-- Two independent implementations:
-  - Process-based parallelism using `fork()`.
-  - Thread-based parallelism using POSIX threads.
-- Shared memory and semaphore synchronization (multithreading branch).
+- Process-based parallelism using `fork()`.
 
 ---
 
 ## Branches
 
-### 1. `add/childProcessing`
+### . `add/childProcessing`
 
-This branch implements parallel encryption and decryption using **child processes**.
+Implements parallel encryption and decryption using **child processes**.
 
 #### Key Features
 
@@ -40,26 +36,6 @@ This branch implements parallel encryption and decryption using **child processe
 - POSIX Process APIs
 - `fork()`
 - Process Management
-
----
-
-### 2. `add/multithreading`
-
-This branch implements parallel encryption and decryption using **multithreading** and **shared memory**.
-
-#### Key Features
-
-- POSIX threads (`pthread`)
-- Shared memory communication
-- Semaphore-based synchronization
-- Concurrent execution of encryption and decryption tasks
-
-#### Technologies Used
-
-- C++
-- POSIX Threads (`pthread`)
-- Shared Memory
-- Semaphores
 
 ---
 
@@ -214,10 +190,6 @@ This project demonstrates:
 
 - Parallel programming in C++
 - Process management using `fork()`
-- Multithreading using POSIX threads
-- Shared memory communication
-- Semaphore synchronization
-- Task scheduling and execution
 - File handling and encryption workflows
 
 ---
